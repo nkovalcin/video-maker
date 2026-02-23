@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Video files
+input/*.MOV
+input/*.mov
+input/*.MP4
+input/*.mp4
+input/*.AVI
+input/*.avi
+
+# Output files
+output/*.mp4
+output/*.json
+output/debug_frames/*.jpg
+output/debug_frames/*.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

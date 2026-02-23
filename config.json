@@ -1,0 +1,19 @@
+{
+  "target_duration": 10,
+  "scene_threshold": 20.0,
+  "motion_threshold": 8.0,
+  "audio_threshold": -35,
+  "slowmo_factor_range": [1.0, 1.0],
+  "transition_duration": 0.0,
+  "min_moment_duration": 0.3,
+  "max_moment_duration": 3.0,
+  "ideal_clip_duration": 2.0,
+  "max_moments": 20,
+  "min_moment_score": 0.08,
+  "require_hook_in_first_3s": true,
+  "prefer_high_motion": true,
+  "use_full_videos_if_short": true,
+  "output_resolution": [1920, 1080],
+  "output_fps": 30,
+  "debug_mode": true
+}
