@@ -2,6 +2,16 @@
 
 AI-powered automatic video editor that creates engaging 10-second highlight reels from raw footage. Uses computer vision and audio analysis to find the most interesting moments.
 
+## Table of Contents
+
+- [Features](#features)
+- [How It Works](#how-it-works)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Project Structure](#project-structure)
+- [Requirements](#requirements)
+- [License](#license)
+
 ## Features
 
 - **Scene change detection** — identifies when something new happens
@@ -22,6 +32,11 @@ AI-powered automatic video editor that creates engaging 10-second highlight reel
 ## Usage
 
 ```bash
+pip install -r requirements.txt
+
+# Copy and customize config
+cp config.example.json config.json
+
 # Place input videos in the input/ folder
 python3 main.py
 
@@ -30,7 +45,7 @@ python3 main.py
 
 ## Configuration
 
-Edit `config.json` to customize:
+Copy `config.example.json` to `config.json` and customize:
 
 | Setting | Default | Description |
 |---------|---------|-------------|
@@ -46,20 +61,25 @@ Edit `config.json` to customize:
 ## Project Structure
 
 ```
-├── main.py        # Entry point
-├── detector.py    # Moment detection (scene, motion, audio)
-├── editor.py      # Video assembly and rendering
-├── config.json    # Configuration
-├── input/         # Drop raw videos here
-└── output/        # Rendered highlights
+├── main.py              # Entry point
+├── detector.py          # Moment detection (scene, motion, audio)
+├── editor.py            # Video assembly and rendering
+├── config.example.json  # Configuration template
+├── requirements.txt     # Python dependencies
+├── input/               # Drop raw videos here
+└── output/              # Rendered highlights
 ```
 
 ## Requirements
 
 - Python 3.8+
 - FFmpeg
-- OpenCV (`pip install opencv-python`)
-- MoviePy (`pip install moviepy`)
+- OpenCV (`opencv-python`)
+- MoviePy (`moviepy`)
+
+```bash
+pip install -r requirements.txt
+```
 
 ## License
 
